@@ -5,9 +5,11 @@ Welcome to the *86 400* tech lab! This repository represents a small piece of th
 ## About
 
 A simple express project with two endpoints, each requiring a different style of Authorization.
-
 # Getting started
 
 * Run `npm install`
 * Run `npm run test`
-* Check tests that are failing and trouble shoot what needs to be fixed in the application code
+* Check tests that are failing and trouble shoot what needs to be fixed in the application code.
+
+Git Repo = https://github.com/vince86400/tech-test-3-public
+

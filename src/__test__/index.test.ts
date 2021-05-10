@@ -26,5 +26,11 @@ describe('express', function () {
       .set('Authorization', 'Basic: bWF0dEBnbWFpbC5jb206dGhpcyBpcyBhIHZAbGlkIHBhc3N3b3JkIQ==');
       expect(res.statusCode).to.equal(200);
     });
+    it('should return invalid login ', async () => {
+      const res = await request(server)
+      .get('/basic-auth')
+      .set('Authorization', 'Basic: ffff==');
+      expect(res.body.message).to.equal('invalid login');
+    });
   })
 });
